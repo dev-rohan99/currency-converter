@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+
+
+    <div id="mainWrapper">
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <h1 class="text-center text-white mb-5 pb-3" style="border-bottom: 2px solid white;">CURRENCY</h1>
+                    <div class="col-md-5">
+                        <label style="font-size: 25px;margin-bottom: 10px;" for="amount">Your Amount</label>
+                        <div style="position: relative;" class="form-group">
+                            <span id="currencyIcon">$</span>
+                            <input style="padding-left: 30px;" class="form-control" type="number" placeholder="Amount" id="amount">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label style="font-size: 25px;margin-bottom: 10px;" for="to">From</label>
+                        <div class="form-group">
+                            <select class="form-control" id="from">
+                                <option value="">- SELECT -</option>
+                                <option value="1">USD</option>
+                                <option value="1.26">CAD</option>
+                                <option value="0.89">EURO</option>
+                                <option value="85.72">BDT</option>
+                                <option value="0.74">POUND</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1">
+                        <div class="iconWrapper">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label style="font-size: 25px;margin-bottom: 10px;" for="to">To</label>
+                        <div class="form-group">
+                            <select class="form-control" id="to">
+                                <option value="">- SELECT -</option>
+                                <option value="1">USD</option>
+                                <option value="1.26">CAD</option>
+                                <option value="0.89">EURO</option>
+                                <option value="85.72">BDT</option>
+                                <option value="0.74">POUND</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttonWrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input id="reset" type="submit" class="btn btn-danger w-100" value="RESET">
+                        </div>
+
+                        <div class="col-md-7">
+                            <input id="calculate" type="submit" class="btn btn-success w-100" value="CALCULATE">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="result">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
